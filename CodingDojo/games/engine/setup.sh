@@ -4,23 +4,24 @@ if [ "x$CODENJOY_VERSION" = "x" ]; then
     CODENJOY_VERSION=1.1.1
 fi
 
-mkdir .\.mvn
-mkdir .\.mvn\wrapper
+mkdir ./.mvn
+mkdir ./.mvn/wrapper
 
-MVNW=$(pwd)\mvnw
+#MVNW=$(pwd)/mvnw
+MVNW=mvn
 
-if [ -f ".\engine-$CODENJOY_VERSION-pom.xml" ]; then
-    mkdir .\target
-    cp .\pom.xml .\target\engine-$CODENJOY_VERSION-pom.xml
-    cp .\games-pom.xml .\target\games-$CODENJOY_VERSION-pom.xml
-elif [ ! -d ".\target" ]; then
+if [ -f "./engine-$CODENJOY_VERSION-pom.xml" ]; then
+    mkdir ./target
+    cp ./pom.xml ./target/engine-$CODENJOY_VERSION-pom.xml
+    cp ./games-pom.xml ./target/games-$CODENJOY_VERSION-pom.xml
+elif [ ! -d "./target" ]; then
         $MVNW clean install -DskipTests=true
-        cp .\pom.xml .\target\engine-$CODENJOY_VERSION-pom.xml
-        cp ..\pom.xml .\target\games-$CODENJOY_VERSION-pom.xml
+        cp ./pom.xml ./target/engine-$CODENJOY_VERSION-pom.xml
+        cp ../pom.xml ./target/games-$CODENJOY_VERSION-pom.xml
     fi
 fi
 
-cd .\target
+cd ./target
 
 $MVNW install:install-file -Dfile=engine-$CODENJOY_VERSION.jar -Dsources=engine-$CODENJOY_VERSION-sources.jar -DpomFile=engine-$CODENJOY_VERSION-pom.xml -DgroupId=com.codenjoy -DartifactId=engine -Dversion=$CODENJOY_VERSION -Dpackaging=jar
 
