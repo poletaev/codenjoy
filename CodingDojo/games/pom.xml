@@ -45,37 +45,8 @@
 
     <modules>
         <module>engine</module>
-        <module>sample</module>
-        <module>sample-text</module>
-        <module>a2048</module>
-        <module>bomberman</module>
-        <module>battlecity</module>
-        <module>chess</module>
-        <module>collapse</module>
-        <module>hex</module>
-        <module>loderunner</module>
-        <module>minesweeper</module>
-        <module>rubicscube</module>
-        <module>sudoku</module>
-        <module>snake</module>
-        <module>snakebattle</module>
-        <module>moebius</module>
-        <module>football</module>
-        <module>startandjump</module>
-        <module>quake2d</module>
-        <module>pong</module>
-        <module>fifteen</module>
-        <module>puzzlebox</module>
         <module>spacerace</module>
-        <module>kata</module>
-        <module>icancode</module>
-        <module>expansion</module>
-        <module>reversi</module>
-        <module>quadro</module>
-        <module>lunolet</module>
-        <module>tetris</module>
-        <module>sokoban</module>
-        <module>lemonade</module>
+        <module>space-coding-battle-2019</module>
     </modules>
 
     <dependencyManagement>
