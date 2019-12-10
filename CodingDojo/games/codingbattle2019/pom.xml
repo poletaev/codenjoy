@@ -10,10 +10,10 @@
         <version>1.1.1</version>
     </parent>
 
-    <artifactId>${module.name}-engine</artifactId>
+    <artifactId>codingbattle2019-engine</artifactId>
 
     <properties>
-        <module.name>coding-battle-2019</module.name>
+        <module.name>codingbattle2019</module.name>
     </properties>
 
     <repositories>
@@ -55,12 +55,6 @@
             <groupId>org.easytesting</groupId>
             <artifactId>fest-reflect</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.codenjoy</groupId>
-            <artifactId>spacerace-engine</artifactId>
-            <version>1.1.1</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 

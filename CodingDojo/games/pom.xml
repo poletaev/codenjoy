@@ -46,7 +46,7 @@
     <modules>
         <module>engine</module>
         <module>spacerace</module>
-        <module>coding-battle-2019</module>
+        <module>codingbattle2019</module>
     </modules>
 
     <dependencyManagement>

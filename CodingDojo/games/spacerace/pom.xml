@@ -10,7 +10,7 @@
         <version>1.1.1</version>
     </parent>
 
-    <artifactId>${module.name}-engine</artifactId>
+    <artifactId>spacerace-engine</artifactId>
 
     <properties>
         <module.name>spacerace</module.name>

@@ -416,7 +416,7 @@
             <dependencies>
                 <dependency>
                     <groupId>${project.groupId}</groupId>
-                    <artifactId>coding-battle-2019-engine</artifactId>
+                    <artifactId>codingbattle2019-engine</artifactId>
                     <version>${project.version}</version>
                 </dependency>
             </dependencies>
