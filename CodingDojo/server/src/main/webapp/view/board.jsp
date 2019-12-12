@@ -40,8 +40,6 @@
 <body style="display:none;">
     <div id="settings" page="board" contextPath="${ctx}" gameName="${gameName}" playerName="${playerName}" readableName="${readableName}" code="${code}" allPlayersScreen="${allPlayersScreen}"></div>
 
-    <%@include file="forkMe.jsp"%>
-
     <div id="board_page">
         <div id="donate" style="display:none;">
             <input type="button" id="want-donate" value="Помочь проекту..."/>

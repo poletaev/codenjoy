@@ -38,7 +38,6 @@
 <body>
     <div id="settings" page="admin" contextPath="${ctx}" gameName="${gameName}"></div>
 
-    <%@include file="forkMe.jsp"%>
     <div class="page-header">
         <h1>Admin page</h1>
     </div>
