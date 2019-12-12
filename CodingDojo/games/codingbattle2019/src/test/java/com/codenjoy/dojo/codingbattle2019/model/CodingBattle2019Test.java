@@ -32,13 +32,11 @@ import org.junit.Test;
 import org.mockito.stubbing.OngoingStubbing;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class SpaceraceTest {
+public class CodingBattle2019Test {
 
     private CodingBattle2019 game;
     private BulletCharger charger = getBulletCharger();

@@ -66,8 +66,8 @@ public class SingleTest {
 
         dice = mock(Dice.class);
         field = new CodingBattle2019(level, dice,
-                SpaceraceTest.getBulletCharger().getTicksToRecharge(),
-                SpaceraceTest.getBulletCharger().getBulletsCount());
+                CodingBattle2019Test.getBulletCharger().getTicksToRecharge(),
+                CodingBattle2019Test.getBulletCharger().getBulletsCount());
         PrinterFactory factory = new PrinterFactoryImpl();
 
         listener1 = mock(EventListener.class);
