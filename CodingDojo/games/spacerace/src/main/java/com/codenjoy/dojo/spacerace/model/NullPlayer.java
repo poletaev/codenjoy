@@ -1,10 +1,10 @@
-package com.codenjoy.dojo.codingbattle2019.launcher;
+package com.codenjoy.dojo.spacerace.model;
 
 /*-
  * #%L
  * Codenjoy - it's a dojo-like platform from developers to developers.
  * %%
- * Copyright (C) 2018 - 2019 Codenjoy
+ * Copyright (C) 2018 Codenjoy
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -22,17 +22,15 @@ package com.codenjoy.dojo.codingbattle2019.launcher;
  * #L%
  */
 
-import com.codenjoy.dojo.client.LocalGameRunner;
-import com.codenjoy.dojo.codingbattle2019.client.Board;
-import com.codenjoy.dojo.codingbattle2019.client.ai.AI3Solver;
-import com.codenjoy.dojo.services.RandomDice;
 
-public class DryRunGame {
+import com.codenjoy.dojo.spacerace.services.Events;
 
-    public static void main(String[] args) {
-        LocalGameRunner.run(new SmallGameRunner(),
-                //new KeyboardSolver(),
-                new AI3Solver(new RandomDice()),
-                new Board());
+public class NullPlayer extends Player {
+    public NullPlayer() {
+        super(null);
+    }
+
+    public void event(Events event) {
+        // do nothing
     }
 }

@@ -1,10 +1,10 @@
-package com.codenjoy.dojo.codingbattle2019.launcher;
+package com.codenjoy.dojo.spacerace.model;
 
 /*-
  * #%L
  * Codenjoy - it's a dojo-like platform from developers to developers.
  * %%
- * Copyright (C) 2018 - 2019 Codenjoy
+ * Copyright (C) 2018 Codenjoy
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -22,17 +22,36 @@ package com.codenjoy.dojo.codingbattle2019.launcher;
  * #L%
  */
 
-import com.codenjoy.dojo.client.LocalGameRunner;
-import com.codenjoy.dojo.codingbattle2019.client.Board;
-import com.codenjoy.dojo.codingbattle2019.client.ai.AI3Solver;
-import com.codenjoy.dojo.services.RandomDice;
+import com.codenjoy.dojo.services.EventListener;
+import com.codenjoy.dojo.services.multiplayer.GamePlayer;
 
-public class DryRunGame {
+public class Player extends GamePlayer<Hero, Field> {
 
-    public static void main(String[] args) {
-        LocalGameRunner.run(new SmallGameRunner(),
-                //new KeyboardSolver(),
-                new AI3Solver(new RandomDice()),
-                new Board());
+    public static final Player NULL = new NullPlayer();
+
+    Hero hero;
+
+    public Player(EventListener listener) {
+        super(listener);
     }
+
+    public void recharge(){
+        hero.recharge();
+    }
+
+    public Hero getHero() {
+        return hero;
+    }
+
+    @Override
+    public boolean isAlive() {
+        return hero != null && hero.isAlive();
+    }
+
+    @Override
+    public void newHero(Field field) {
+        hero = new Hero(field.getFreeRandom(), field.getCharger());
+        hero.init(field);
+    }
+
 }
