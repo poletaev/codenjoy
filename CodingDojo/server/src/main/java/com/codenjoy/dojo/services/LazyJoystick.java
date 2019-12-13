@@ -73,6 +73,30 @@ public class LazyJoystick implements Joystick, Tickable {
     }
 
     @Override
+    public void upLeft() {
+        commands.add(Joystick::upLeft);
+        list.add("UP_LEFT");
+    }
+
+    @Override
+    public void upRight() {
+        commands.add(Joystick::upRight);
+        list.add("UP_RIGHT");
+    }
+
+    @Override
+    public void downLeft() {
+        commands.add(Joystick::downLeft);
+        list.add("DOWN_LEFT");
+    }
+
+    @Override
+    public void downRight() {
+        commands.add(Joystick::downRight);
+        list.add("DOWN_RIGHT");
+    }
+
+    @Override
     public void act(int... parameters) {
         if (parameters == null) {
             return;

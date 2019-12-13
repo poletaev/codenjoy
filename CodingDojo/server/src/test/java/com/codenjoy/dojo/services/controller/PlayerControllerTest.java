@@ -113,6 +113,30 @@ public class PlayerControllerTest {
             }
 
             @Override
+            public void upLeft() {
+                serverMessages.add("up_left");
+
+            }
+
+            @Override
+            public void upRight() {
+                serverMessages.add("up_right");
+
+            }
+
+            @Override
+            public void downLeft() {
+                serverMessages.add("down_left");
+
+            }
+
+            @Override
+            public void downRight() {
+                serverMessages.add("down_right");
+
+            }
+
+            @Override
             public void act(int... p) {
                 serverMessages.add("act" + Arrays.toString(p));
             }
@@ -209,6 +233,78 @@ public class PlayerControllerTest {
         waitForPlayerResponse();
 
         assertEquals("[right, act[]]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldUpRight() {
+        client.willAnswer("up_right").start();
+        waitForPlayerResponse();
+
+        assertEquals("[up_right]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldUpLeft() {
+        client.willAnswer("up_Left").start();
+        waitForPlayerResponse();
+
+        assertEquals("[up_left]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldDownRight() {
+        client.willAnswer("Down_right").start();
+        waitForPlayerResponse();
+
+        assertEquals("[down_right]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldDownLeft() {
+        client.willAnswer("dOwn_left").start();
+        waitForPlayerResponse();
+
+        assertEquals("[down_left]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldUpRightAct() {
+        client.willAnswer("up_right ,AcT").start();
+        waitForPlayerResponse();
+
+        assertEquals("[up_right, act[]]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldUpLeftAct() {
+        client.willAnswer("up_Left,act").start();
+        waitForPlayerResponse();
+
+        assertEquals("[up_left, act[]]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldDownRightAct() {
+        client.willAnswer("Down_right,Act ").start();
+        waitForPlayerResponse();
+
+        assertEquals("[down_right, act[]]", serverMessages.toString());
+        clean();
+    }
+
+    @Test
+    public void shouldDownLeftAct() {
+        client.willAnswer("dOwn_left, ACt").start();
+        waitForPlayerResponse();
+
+        assertEquals("[down_left, act[]]", serverMessages.toString());
         clean();
     }
 

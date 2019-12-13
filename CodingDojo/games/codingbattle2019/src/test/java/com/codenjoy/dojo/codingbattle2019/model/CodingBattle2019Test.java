@@ -279,6 +279,46 @@ public class CodingBattle2019Test {
                 "☼ ☺ ☼" +
                 "☼   ☼" +
                 "☼   ☼");
+        //When
+        hero.upRight();
+        game.tick();
+
+        //Then
+        assertE("☼   ☼" +
+                "☼  ☺☼" +
+                "☼   ☼" +
+                "☼   ☼" +
+                "☼   ☼");
+        //When
+        hero.downLeft();
+        game.tick();
+
+        //Then
+        assertE("☼   ☼" +
+                "☼   ☼" +
+                "☼ ☺ ☼" +
+                "☼   ☼" +
+                "☼   ☼");
+        //When
+        hero.upLeft();
+        game.tick();
+
+        //Then
+        assertE("☼   ☼" +
+                "☼☺  ☼" +
+                "☼   ☼" +
+                "☼   ☼" +
+                "☼   ☼");
+        //When
+        hero.downRight();
+        game.tick();
+
+        //Then
+        assertE("☼   ☼" +
+                "☼   ☼" +
+                "☼ ☺ ☼" +
+                "☼   ☼" +
+                "☼   ☼");
     }
 
     // появляется новый комень

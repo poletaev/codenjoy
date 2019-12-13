@@ -33,7 +33,7 @@ public class PlayerCommand {
     private static Logger logger = DLoggerFactory.getLogger(PlayerCommand.class);
 
     public static final int MAX_COMMAND_LENGTH = 100;
-    private static final String COMMAND = "(left|right|up|down|(act(\\((-?\\d*,?)+\\))?)|(message(\\('(.*)'\\))?))";
+    private static final String COMMAND = "(up_left|up_right|down_right|down_left|left|right|up|down|(act(\\((-?\\d*,?)+\\))?)|(message(\\('(.*)'\\))?))";
     private static Pattern PATTERN = Pattern.compile(COMMAND, Pattern.CASE_INSENSITIVE);
 
     private Joystick joystick;
@@ -72,6 +72,14 @@ public class PlayerCommand {
                     joystick.up();
                 } else if (command.equals("down")) {
                     joystick.down();
+                } else if (command.equals("up_left")) {
+                    joystick.upLeft();
+                } else if (command.equals("up_right")) {
+                    joystick.upRight();
+                } else if (command.equals("down_left")) {
+                    joystick.downLeft();
+                } else if (command.equals("down_right")) {
+                    joystick.downRight();
                 } else if (command.startsWith("act")) {
                     String p = matcher.group(3);
                     if (p == null) {

@@ -82,6 +82,46 @@ public class LockedJoystick implements Joystick {
     }
 
     @Override
+    public void upLeft() {
+        lock.writeLock().lock();
+        try {
+            joystick.upLeft();
+        } finally {
+            lock.writeLock().unlock();
+        }
+    }
+
+    @Override
+    public void upRight() {
+        lock.writeLock().lock();
+        try {
+            joystick.upRight();
+        } finally {
+            lock.writeLock().unlock();
+        }
+    }
+
+    @Override
+    public void downLeft() {
+        lock.writeLock().lock();
+        try {
+            joystick.downLeft();
+        } finally {
+            lock.writeLock().unlock();
+        }
+    }
+
+    @Override
+    public void downRight() {
+        lock.writeLock().lock();
+        try {
+            joystick.downRight();
+        } finally {
+            lock.writeLock().unlock();
+        }
+    }
+
+    @Override
     public void act(int... p) {
         lock.writeLock().lock();
         try {

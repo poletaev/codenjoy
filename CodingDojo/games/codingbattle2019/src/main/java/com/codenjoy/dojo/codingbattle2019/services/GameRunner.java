@@ -25,7 +25,7 @@ package com.codenjoy.dojo.codingbattle2019.services;
 import com.codenjoy.dojo.client.ClientBoard;
 import com.codenjoy.dojo.client.Solver;
 import com.codenjoy.dojo.codingbattle2019.client.Board;
-import com.codenjoy.dojo.codingbattle2019.client.ai.AI3Solver;
+import com.codenjoy.dojo.codingbattle2019.client.ai.AISolver;
 import com.codenjoy.dojo.codingbattle2019.model.*;
 import com.codenjoy.dojo.services.AbstractGameType;
 import com.codenjoy.dojo.services.EventListener;
@@ -54,36 +54,17 @@ public class GameRunner extends AbstractGameType implements GameType {
     }
 
     protected String getMap() {
-        return "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼                            ☼" +
-                "☼              ☺             ☼";
+        return  "☼        ☼" +
+                "☼        ☼" +
+                "☼        ☼" +
+                "☼        ☼" +
+                "☼        ☼" +
+                "☼        ☼" +
+                "☼   ☺    ☼" +
+                "☼        ☼" +
+                "☼        ☼" +
+                "☼        ☼" +
+                "☼        ☼";
     }
 
     @Override
@@ -113,7 +94,7 @@ public class GameRunner extends AbstractGameType implements GameType {
 
     @Override
     public Class<? extends Solver> getAI() {
-        return AI3Solver.class;
+        return AISolver.class;
     }
 
     @Override

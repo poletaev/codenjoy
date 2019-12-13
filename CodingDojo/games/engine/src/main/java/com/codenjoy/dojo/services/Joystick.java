@@ -38,6 +38,14 @@ public interface Joystick {
 
     void right();
 
+    void upLeft();
+
+    void upRight();
+
+    void downLeft();
+
+    void downRight();
+
     /**
      * Зависит от твоей игры - обычно это действие: поставить бомбу, выстрелить, просверлить ямку и т.д.
      */

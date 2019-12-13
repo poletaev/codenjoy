@@ -141,6 +141,26 @@ public class LocalGameRunnerTest {
                     }
 
                     @Override
+                    public void upLeft() {
+                        gamePlayer.event("EVENT(UP_LEFT)" + id());
+                    }
+
+                    @Override
+                    public void upRight() {
+                        gamePlayer.event("EVENT(UP_RIGHT)" + id());
+                    }
+
+                    @Override
+                    public void downLeft() {
+                        gamePlayer.event("EVENT(DOWN_LEFT)" + id());
+                    }
+
+                    @Override
+                    public void downRight() {
+                        gamePlayer.event("EVENT(DOWN_RIGHT)" + id());
+                    }
+
+                    @Override
                     public void up() {
                         gamePlayer.event("EVENT(UP)" + id());
                     }

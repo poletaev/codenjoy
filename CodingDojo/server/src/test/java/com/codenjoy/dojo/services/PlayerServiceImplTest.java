@@ -227,6 +227,26 @@ public class PlayerServiceImplTest {
             }
 
             @Override
+            public void upLeft() {
+
+            }
+
+            @Override
+            public void upRight() {
+
+            }
+
+            @Override
+            public void downLeft() {
+
+            }
+
+            @Override
+            public void downRight() {
+
+            }
+
+            @Override
             public void act(int... p) {
 
             }

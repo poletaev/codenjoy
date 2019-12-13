@@ -70,6 +70,34 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
     }
 
     @Override
+    public void upLeft() {
+        if (!alive) return;
+
+        direction = Direction.UP_LEFT;
+    }
+
+    @Override
+    public void upRight() {
+        if (!alive) return;
+
+        direction = Direction.UP_RIGHT;
+    }
+
+    @Override
+    public void downLeft() {
+        if (!alive) return;
+
+        direction = Direction.DOWN_LEFT;
+    }
+
+    @Override
+    public void downRight() {
+        if (!alive) return;
+
+        direction = Direction.DOWN_RIGHT;
+    }
+
+    @Override
     public void act(int... p) {
         if (p.length == 1 && p[0] == 0) {
             die();

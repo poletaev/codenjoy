@@ -49,6 +49,26 @@ public class NullPlayerHero extends PlayerHero {
     }
 
     @Override
+    public void upLeft() {
+
+    }
+
+    @Override
+    public void upRight() {
+
+    }
+
+    @Override
+    public void downLeft() {
+
+    }
+
+    @Override
+    public void downRight() {
+
+    }
+
+    @Override
     public void act(int... p) {
         // do nothing
     }

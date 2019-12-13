@@ -45,4 +45,24 @@ public interface NoDirectionJoystick extends Joystick {
     default void right() {
         // do nothing
     }
+
+    @Override
+    default void upLeft() {
+
+    }
+
+    @Override
+    default void upRight() {
+
+    }
+
+    @Override
+    default void downLeft() {
+
+    }
+
+    @Override
+    default void downRight() {
+
+    }
 }
