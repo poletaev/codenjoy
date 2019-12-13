@@ -23,15 +23,15 @@ package com.codenjoy.dojo.codingbattle2019.launcher;
  */
 
 import com.codenjoy.dojo.client.LocalGameRunner;
-import com.codenjoy.dojo.services.RandomDice;
 import com.codenjoy.dojo.codingbattle2019.client.Board;
 import com.codenjoy.dojo.codingbattle2019.client.ai.AI3Solver;
-import com.codenjoy.dojo.codingbattle2019.services.GameRunner;
+import com.codenjoy.dojo.codingbattle2019.services.SmallGameRunner;
+import com.codenjoy.dojo.services.RandomDice;
 
 public class DryRunGame {
 
     public static void main(String[] args) {
-        LocalGameRunner.run(new GameRunner(),
+        LocalGameRunner.run(new SmallGameRunner(),
                 //new KeyboardSolver(),
                 new AI3Solver(new RandomDice()),
                 new Board());
