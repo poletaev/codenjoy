@@ -28,14 +28,14 @@ import com.codenjoy.dojo.services.multiplayer.PlayerHero;
 public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
 
     private boolean alive;
-    private Direction direction = Direction.UP;
+    private Direction direction;
     private boolean fire;
     private int deadCount = 0;
     private BulletCharger charger;
 
     public Hero(Point xy, BulletCharger charger) {
         super(xy);
-        direction = Direction.UP;
+        direction = null;
         fire = false;
         alive = true;
         this.charger = charger;
@@ -140,6 +140,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
             if (!field.isBarrier(newX, newY)) {
                 move(newX, newY);
             }
+            direction = null;
         }
     }
 
@@ -158,6 +159,9 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         }
 
         if (this == player.getHero()) {
+            if (direction == null)
+                return Elements.HERO_UP;
+            else
             switch (direction) {
                 case STOP:
                 case UP:  return Elements.HERO_UP;

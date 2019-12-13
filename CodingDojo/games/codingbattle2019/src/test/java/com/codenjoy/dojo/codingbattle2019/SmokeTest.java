@@ -31,6 +31,7 @@ import com.codenjoy.dojo.codingbattle2019.client.Board;
 import com.codenjoy.dojo.codingbattle2019.client.YourSolver;
 import com.codenjoy.dojo.codingbattle2019.client.ai.AISolver;
 import com.codenjoy.dojo.codingbattle2019.services.GameRunner;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.LinkedList;
@@ -42,6 +43,7 @@ public class SmokeTest {
 
     private Dice dice;
 
+    @Ignore
     @Test
     public void test() {
         // given
