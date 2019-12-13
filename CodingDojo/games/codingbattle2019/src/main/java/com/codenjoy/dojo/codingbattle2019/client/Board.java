@@ -46,12 +46,31 @@ public class Board extends AbstractBoard<Elements> {
 
     public Point getMe() {
 
-        if(get(Elements.DEAD_HERO,Elements.HERO).get(0) == null){
+        if(get(Elements.DEAD_HERO,
+               Elements.HERO,
+               Elements.HERO_UP,
+               Elements.HERO_UP_RIGHT,
+               Elements.HERO_RIGHT,
+               Elements.HERO_DOWN_RIGHT,
+               Elements.HERO_DOWN,
+               Elements.HERO_DOWN_LEFT,
+               Elements.HERO_LEFT,
+               Elements.HERO_UP_LEFT
+               ).get(0) == null){
             return pt(1, 1);
         }else {
 
         return get(Elements.DEAD_HERO,
-                Elements.HERO).get(0);
+                Elements.HERO,
+                Elements.HERO_UP,
+                Elements.HERO_UP_RIGHT,
+                Elements.HERO_RIGHT,
+                Elements.HERO_DOWN_RIGHT,
+                Elements.HERO_DOWN,
+                Elements.HERO_DOWN_LEFT,
+                Elements.HERO_LEFT,
+                Elements.HERO_UP_LEFT
+        ).get(0);
     }}
 
     public boolean isGameOver() {

@@ -28,14 +28,14 @@ import com.codenjoy.dojo.services.multiplayer.PlayerHero;
 public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
 
     private boolean alive;
-    private Direction direction;
+    private Direction direction = Direction.UP;
     private boolean fire;
     private int deadCount = 0;
     private BulletCharger charger;
 
     public Hero(Point xy, BulletCharger charger) {
         super(xy);
-        direction = null;
+        direction = Direction.UP;
         fire = false;
         alive = true;
         this.charger = charger;
@@ -141,7 +141,6 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
                 move(newX, newY);
             }
         }
-        direction = null;
     }
 
     public boolean isAlive() {
@@ -159,7 +158,18 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         }
 
         if (this == player.getHero()) {
-            return Elements.HERO;
+            switch (direction) {
+                case STOP:
+                case UP:  return Elements.HERO_UP;
+                case UP_RIGHT: return Elements.HERO_UP_RIGHT;
+                case RIGHT:  return Elements.HERO_RIGHT;
+                case DOWN_RIGHT:  return Elements.HERO_DOWN_RIGHT;
+                case DOWN:  return Elements.HERO_DOWN;
+                case DOWN_LEFT:  return Elements.HERO_DOWN_LEFT;
+                case LEFT:  return Elements.HERO_LEFT;
+                case UP_LEFT:  return Elements.HERO_UP_LEFT;
+                default: return Elements.HERO;
+            }
         } else {
             return Elements.OTHER_HERO;
         }
