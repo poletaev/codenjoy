@@ -32,12 +32,14 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
     private boolean fire;
     private int deadCount = 0;
     private BulletCharger charger;
+    private boolean moving = false;
 
     public Hero(Point xy, BulletCharger charger) {
         super(xy);
         direction = null;
         fire = false;
         alive = true;
+        moving = false;
         this.charger = charger;
     }
 
@@ -46,6 +48,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.DOWN;
+        moving = true;
     }
 
     @Override
@@ -53,6 +56,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.UP;
+        moving = true;
     }
 
     @Override
@@ -60,6 +64,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.LEFT;
+        moving = true;
     }
 
     @Override
@@ -67,6 +72,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.RIGHT;
+        moving = true;
     }
 
     @Override
@@ -74,6 +80,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.UP_LEFT;
+        moving = true;
     }
 
     @Override
@@ -81,6 +88,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.UP_RIGHT;
+        moving = true;
     }
 
     @Override
@@ -88,6 +96,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.DOWN_LEFT;
+        moving = true;
     }
 
     @Override
@@ -95,6 +104,7 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
         if (!alive) return;
 
         direction = Direction.DOWN_RIGHT;
+        moving = true;
     }
 
     @Override
@@ -133,14 +143,14 @@ public class Hero extends PlayerHero<Field> implements State<Elements, Player> {
             fire = false;
         }
 
-        if (direction != null) {
+        if (direction != null && moving) {
             int newX = direction.changeX(x);
             int newY = direction.changeY(y);
 
             if (!field.isBarrier(newX, newY)) {
                 move(newX, newY);
             }
-            direction = null;
+            moving = false;
         }
     }
 

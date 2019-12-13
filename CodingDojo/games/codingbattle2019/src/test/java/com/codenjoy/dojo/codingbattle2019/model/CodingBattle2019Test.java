@@ -253,7 +253,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼   ☼" +
-                "☼  A☼" +
+                "☼  >☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -265,7 +265,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼  A☼" +
+                "☼  V☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -276,7 +276,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ A ☼" +
+                "☼ < ☼" +
                 "☼   ☼" +
                 "☼   ☼");
         //When
@@ -285,7 +285,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼   ☼" +
-                "☼  A☼" +
+                "☼  ➚☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -296,7 +296,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ A ☼" +
+                "☼ ↙ ☼" +
                 "☼   ☼" +
                 "☼   ☼");
         //When
@@ -305,7 +305,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼   ☼" +
-                "☼A  ☼" +
+                "☼↖  ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -316,7 +316,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ A ☼" +
+                "☼ ➘ ☼" +
                 "☼   ☼" +
                 "☼   ☼");
     }
@@ -1130,7 +1130,7 @@ public class CodingBattle2019Test {
 
         // then
         assertE("☼7   ☼" +
-                "☼A   ☼" +
+                "☼<   ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
@@ -1186,7 +1186,7 @@ public class CodingBattle2019Test {
 
         //Given
         assertE("☼   ☼" +
-                "☼A  ☼" +
+                "☼<  ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -1197,7 +1197,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼*  ☼" +
-                "☼A  ☼" +
+                "☼<  ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
