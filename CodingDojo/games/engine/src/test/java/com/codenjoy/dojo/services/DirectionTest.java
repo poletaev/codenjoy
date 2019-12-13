@@ -39,6 +39,10 @@ public class DirectionTest {
         assertEquals("RIGHT", Direction.valueOf(1).toString());
         assertEquals("UP", Direction.valueOf(2).toString());
         assertEquals("DOWN", Direction.valueOf(3).toString());
+        assertEquals("UP_LEFT", Direction.valueOf(4).toString());
+        assertEquals("UP_RIGHT", Direction.valueOf(5).toString());
+        assertEquals("DOWN_LEFT", Direction.valueOf(6).toString());
+        assertEquals("DOWN_RIGHT", Direction.valueOf(7).toString());
     }
 
     @Test
@@ -47,6 +51,10 @@ public class DirectionTest {
         assertEquals(1, Direction.valueOf("RIGHT").value());
         assertEquals(2, Direction.valueOf("UP").value());
         assertEquals(3, Direction.valueOf("DOWN").value());
+        assertEquals(4, Direction.valueOf("UP_LEFT").value());
+        assertEquals(5, Direction.valueOf("UP_RIGHT").value());
+        assertEquals(6, Direction.valueOf("DOWN_LEFT").value());
+        assertEquals(7, Direction.valueOf("DOWN_RIGHT").value());
     }
 
     @Test
@@ -55,12 +63,16 @@ public class DirectionTest {
         assertEquals(Direction.LEFT, Direction.RIGHT.inverted());
         assertEquals(Direction.DOWN, Direction.UP.inverted());
         assertEquals(Direction.UP, Direction.DOWN.inverted());
+        assertEquals(Direction.UP_LEFT, Direction.DOWN_RIGHT.inverted());
+        assertEquals(Direction.DOWN_RIGHT, Direction.UP_LEFT.inverted());
+        assertEquals(Direction.UP_RIGHT, Direction.DOWN_LEFT.inverted());
+        assertEquals(Direction.DOWN_LEFT, Direction.UP_RIGHT.inverted());
     }
 
     @Test
     public void test_random() {
-        int[] c = new int[4];
-        for (int count = 0; count < 1200; count ++) {
+        int[] c = new int[8];
+        for (int count = 0; count < 2400; count ++) {
             c[Direction.random().value()]++;
         }
         String message = Arrays.toString(c);
@@ -68,6 +80,10 @@ public class DirectionTest {
         assertTrue(message, c[1] > 250);
         assertTrue(message, c[2] > 250);
         assertTrue(message, c[3] > 250);
+        assertTrue(message, c[4] > 250);
+        assertTrue(message, c[5] > 250);
+        assertTrue(message, c[6] > 250);
+        assertTrue(message, c[7] > 250);
     }
 
     @Test
@@ -76,6 +92,11 @@ public class DirectionTest {
         check(pt(-1, 0), Direction.LEFT, pt(0, 0));
         check(pt(0, 1), Direction.UP, pt(0, 0));
         check(pt(1, 0), Direction.RIGHT, pt(0, 0));
+
+        check(pt(1, -1), Direction.DOWN_RIGHT, pt(0, 0));
+        check(pt(-1, 1), Direction.UP_LEFT, pt(0, 0));
+        check(pt(1, 1), Direction.UP_RIGHT, pt(0, 0));
+        check(pt(-1, -1), Direction.DOWN_LEFT, pt(0, 0));
     }
 
     @Test
@@ -84,6 +105,10 @@ public class DirectionTest {
         assertEquals("[-1,0]", Direction.LEFT.change(pt(0, 0)).toString());
         assertEquals("[0,1]", Direction.UP.change(pt(0, 0)).toString());
         assertEquals("[0,-1]", Direction.DOWN.change(pt(0, 0)).toString());
+        assertEquals("[1,-1]", Direction.DOWN_RIGHT.change(pt(0, 0)).toString());
+        assertEquals("[-1,1]", Direction.UP_LEFT.change(pt(0, 0)).toString());
+        assertEquals("[1,1]", Direction.UP_RIGHT.change(pt(0, 0)).toString());
+        assertEquals("[-1,-1]", Direction.DOWN_LEFT.change(pt(0, 0)).toString());
     }
 
     private void check(Point expected, Direction direction, Point input) {

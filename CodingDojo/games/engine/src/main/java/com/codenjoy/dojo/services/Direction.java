@@ -25,7 +25,6 @@ package com.codenjoy.dojo.services;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
 import static com.codenjoy.dojo.services.PointImpl.pt;
 
@@ -33,8 +32,16 @@ import static com.codenjoy.dojo.services.PointImpl.pt;
  * Имплементит возможные направления движения чего либо
  */
 public enum Direction {
-    LEFT(0, -1, 0), RIGHT(1, 1, 0), UP(2, 0, -1), DOWN(3, 0, 1),
-    ACT(4, 0, 0), STOP(5, 0, 0);
+    LEFT(0, -1, 0),
+    RIGHT(1, 1, 0),
+    UP(2, 0, -1),
+    DOWN(3, 0, 1),
+    UP_LEFT(4, -1, -1),
+    UP_RIGHT(5, 1, -1),
+    DOWN_LEFT(6, -1, 1),
+    DOWN_RIGHT(7, 1, 1),
+    ACT(8, 0, 0),
+    STOP(9, 0, 0);
 
     private final int value;
     private final int dx;
@@ -47,7 +54,7 @@ public enum Direction {
     }
 
     public static List<Direction> getValues() {
-        return Arrays.asList(LEFT, RIGHT, UP, DOWN);
+        return Arrays.asList(LEFT, UP_LEFT, UP, UP_RIGHT, RIGHT, DOWN_RIGHT, DOWN, DOWN_LEFT);
     }
 
     public static Direction valueOf(int i) {
@@ -104,6 +111,10 @@ public enum Direction {
             case DOWN : return UP;
             case LEFT : return RIGHT;
             case RIGHT : return LEFT;
+            case UP_LEFT: return DOWN_RIGHT;
+            case DOWN_RIGHT: return UP_LEFT;
+            case UP_RIGHT: return DOWN_LEFT;
+            case DOWN_LEFT: return UP_RIGHT;
         }
         throw new IllegalArgumentException("Unsupported direction");
     }
@@ -120,18 +131,24 @@ public enum Direction {
      * @return Random direction for given dice.
      */
     public static Direction random(Dice dice) {
-        return Direction.valueOf(dice.next(4));
+        return Direction.valueOf(dice.next(8));
     }
 
     /**
-     * @return Next clockwise direction. LEFT -> UP -> RIGHT -> DOWN -> LEFT.
+     * @return Next clockwise direction.
+     * LEFT -> UP_LEFT -> UP -> UP_RIGHT -> RIGHT ->
+     * DOWN_RIGHT -> DOWN -> DOWN_LEFT -> LEFT.
      */
     public Direction clockwise() {
         switch (this) {
-            case LEFT: return UP;
-            case UP: return RIGHT;
-            case RIGHT: return DOWN;
-            case DOWN: return LEFT;
+            case LEFT: return UP_LEFT;
+            case UP_LEFT: return UP;
+            case UP: return UP_RIGHT;
+            case UP_RIGHT: return RIGHT;
+            case RIGHT: return DOWN_RIGHT;
+            case DOWN_RIGHT: return DOWN;
+            case DOWN: return DOWN_LEFT;
+            case DOWN_LEFT: return LEFT;
         }
         throw new IllegalArgumentException("Cant clockwise for: " + this);
     }
