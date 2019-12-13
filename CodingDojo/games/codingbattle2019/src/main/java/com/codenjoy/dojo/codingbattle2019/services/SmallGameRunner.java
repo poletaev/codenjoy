@@ -10,7 +10,7 @@ public class SmallGameRunner extends GameRunner {
                 "☼        ☼" +
                 "☼        ☼" +
                 "☼        ☼" +
-                "☼   ☺    ☼" +
+                "☼   A    ☼" +
                 "☼        ☼" +
                 "☼        ☼" +
                 "☼        ☼" +

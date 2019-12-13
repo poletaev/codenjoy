@@ -89,7 +89,7 @@ public class SmokeTest {
                         "☼       ☼" +
                         "☼       ☼" +
                         "☼       ☼" +
-                        "☼   ☺   ☼";
+                        "☼   A   ☼";
             }
         };
 
@@ -117,7 +117,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼ ☺     ☼\n" +
+                        "1:☼ A     ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼   ☻   ☼\n" +
@@ -132,7 +132,7 @@ public class SmokeTest {
                         "2:☼ ☻     ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼   ☺   ☼\n" +
+                        "2:☼   A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHT\n" +
                         "DICE:2\n" +
@@ -144,7 +144,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼ ☺     ☼\n" +
+                        "1:☼ A     ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼    ☻  ☼\n" +
@@ -159,7 +159,7 @@ public class SmokeTest {
                         "2:☼ ☻     ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼    ☺  ☼\n" +
+                        "2:☼    A  ☼\n" +
                         "2:\n" +
                         "2:Answer: LEFT\n" +
                         "------------------------------------------\n" +
@@ -169,7 +169,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼ ☺     ☼\n" +
+                        "1:☼ A     ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼   ☻   ☼\n" +
@@ -184,7 +184,7 @@ public class SmokeTest {
                         "2:☼ ☻     ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼   ☺   ☼\n" +
+                        "2:☼   A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHTACT\n" +
                         "DICE:3\n" +
@@ -196,7 +196,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼ ☺     ☼\n" +
+                        "1:☼ A     ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼    ☻  ☼\n" +
@@ -211,7 +211,7 @@ public class SmokeTest {
                         "2:☼ ☻     ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼    ☺  ☼\n" +
+                        "2:☼    A  ☼\n" +
                         "2:\n" +
                         "2:Answer: LEFT\n" +
                         "------------------------------------------\n" +
@@ -221,7 +221,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼ ☺     ☼\n" +
+                        "1:☼ A     ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼   ☻   ☼\n" +
@@ -236,7 +236,7 @@ public class SmokeTest {
                         "2:☼ ☻     ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼   ☺   ☼\n" +
+                        "2:☼   A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHT\n" +
                         "------------------------------------------\n" +
@@ -246,7 +246,7 @@ public class SmokeTest {
                         "1:☼ ♣ 0   ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼ ☺     ☼\n" +
+                        "1:☼ A     ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼    ☻  ☼\n" +
@@ -261,7 +261,7 @@ public class SmokeTest {
                         "2:☼ ☻     ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼    ☺  ☼\n" +
+                        "2:☼    A  ☼\n" +
                         "2:\n" +
                         "2:Answer: LEFTACT\n" +
                         "DICE:0\n" +
@@ -273,7 +273,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼ ♣ 0   ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼ ☺     ☼\n" +
+                        "1:☼ A     ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼   ☻   ☼\n" +
@@ -288,7 +288,7 @@ public class SmokeTest {
                         "2:☼ ☻     ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼   ☺   ☼\n" +
+                        "2:☼   A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHT\n" +
                         "Fire Event: LOOSE\n" +
@@ -304,7 +304,7 @@ public class SmokeTest {
                         "1:☼xxx0   ☼\n" +
                         "1:☼xxx    ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼   ☺   ☼\n" +
+                        "1:☼   A   ☼\n" +
                         "1:☼    ☻  ☼\n" +
                         "1:\n" +
                         "1:Answer: STOP\n" +
@@ -317,7 +317,7 @@ public class SmokeTest {
                         "2:☼xxx    ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼   ☻   ☼\n" +
-                        "2:☼    ☺  ☼\n" +
+                        "2:☼    A  ☼\n" +
                         "2:\n" +
                         "2:Answer: LEFT\n" +
                         "------------------------------------------\n" +
@@ -329,7 +329,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼   0   ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼   ☺   ☼\n" +
+                        "1:☼   A   ☼\n" +
                         "1:☼   ☻   ☼\n" +
                         "1:\n" +
                         "1:Answer: STOP\n" +
@@ -342,7 +342,7 @@ public class SmokeTest {
                         "2:☼   0   ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼   ☻   ☼\n" +
-                        "2:☼   ☺   ☼\n" +
+                        "2:☼   A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHTACT\n" +
                         "DICE:2\n" +
@@ -356,7 +356,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼   0   ☼\n" +
-                        "1:☼   ☺   ☼\n" +
+                        "1:☼   A   ☼\n" +
                         "1:☼    ☻  ☼\n" +
                         "1:\n" +
                         "1:Answer: STOP\n" +
@@ -369,7 +369,7 @@ public class SmokeTest {
                         "2:☼       ☼\n" +
                         "2:☼   0   ☼\n" +
                         "2:☼   ☻   ☼\n" +
-                        "2:☼    ☺  ☼\n" +
+                        "2:☼    A  ☼\n" +
                         "2:\n" +
                         "2:Answer: LEFT\n" +
                         "Fire Event: LOOSE\n" +
@@ -384,7 +384,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼0♣     ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼  ☺    ☼\n" +
+                        "1:☼  A    ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼   ☻   ☼\n" +
                         "1:\n" +
@@ -398,7 +398,7 @@ public class SmokeTest {
                         "2:☼       ☼\n" +
                         "2:☼  ☻    ☼\n" +
                         "2:☼       ☼\n" +
-                        "2:☼   ☺   ☼\n" +
+                        "2:☼   A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHT\n" +
                         "Fire Event: LOOSE\n" +
@@ -414,7 +414,7 @@ public class SmokeTest {
                         "1:☼xxx    ☼\n" +
                         "1:☼xxx    ☼\n" +
                         "1:☼xxx    ☼\n" +
-                        "1:☼   ☺   ☼\n" +
+                        "1:☼   A   ☼\n" +
                         "1:☼    ☻  ☼\n" +
                         "1:\n" +
                         "1:Answer: STOP\n" +
@@ -427,7 +427,7 @@ public class SmokeTest {
                         "2:☼xxx    ☼\n" +
                         "2:☼xxx    ☼\n" +
                         "2:☼   ☻   ☼\n" +
-                        "2:☼    ☺  ☼\n" +
+                        "2:☼    A  ☼\n" +
                         "2:\n" +
                         "2:Answer: LEFTACT\n" +
                         "DICE:1\n" +
@@ -441,7 +441,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼0      ☼\n" +
-                        "1:☼   ☺   ☼\n" +
+                        "1:☼   A   ☼\n" +
                         "1:☼   ☻   ☼\n" +
                         "1:\n" +
                         "1:Answer: STOP\n" +
@@ -454,7 +454,7 @@ public class SmokeTest {
                         "2:☼       ☼\n" +
                         "2:☼0      ☼\n" +
                         "2:☼   ☻   ☼\n" +
-                        "2:☼   ☺   ☼\n" +
+                        "2:☼   A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHT\n" +
                         "------------------------------------------\n" +
@@ -466,7 +466,7 @@ public class SmokeTest {
                         "1:☼ ♣0    ☼\n" +
                         "1:☼       ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼0  ☺   ☼\n" +
+                        "1:☼0  A   ☼\n" +
                         "1:☼    ☻  ☼\n" +
                         "1:\n" +
                         "1:Answer: STOP\n" +
@@ -479,7 +479,7 @@ public class SmokeTest {
                         "2:☼       ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼0  ☻   ☼\n" +
-                        "2:☼    ☺  ☼\n" +
+                        "2:☼    A  ☼\n" +
                         "2:\n" +
                         "2:Answer: LEFT\n" +
                         "------------------------------------------\n" +
@@ -491,7 +491,7 @@ public class SmokeTest {
                         "1:☼       ☼\n" +
                         "1:☼ ♣0    ☼\n" +
                         "1:☼       ☼\n" +
-                        "1:☼   ☺   ☼\n" +
+                        "1:☼   A   ☼\n" +
                         "1:☼0  ☻   ☼\n" +
                         "1:\n" +
                         "1:Answer: STOP\n" +
@@ -504,7 +504,7 @@ public class SmokeTest {
                         "2:☼ ♣0    ☼\n" +
                         "2:☼       ☼\n" +
                         "2:☼   ☻   ☼\n" +
-                        "2:☼0  ☺   ☼\n" +
+                        "2:☼0  A   ☼\n" +
                         "2:\n" +
                         "2:Answer: RIGHTACT\n" +
                         "DICE:0\n" +

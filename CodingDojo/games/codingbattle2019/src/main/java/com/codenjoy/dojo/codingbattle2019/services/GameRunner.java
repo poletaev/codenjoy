@@ -83,7 +83,7 @@ public class GameRunner extends AbstractGameType implements GameType {
                 "☼                            ☼" +
                 "☼                            ☼" +
                 "☼                            ☼" +
-                "☼              ☺             ☼";
+                "☼              A             ☼";
     }
 
     @Override

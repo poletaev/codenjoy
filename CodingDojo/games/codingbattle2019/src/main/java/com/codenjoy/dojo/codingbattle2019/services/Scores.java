@@ -40,7 +40,7 @@ public class Scores implements PlayerScores {
 
         destroyBombScore = settings.addEditBox("Destroy bomb score").type(Integer.class).def(30);
         destroyStoneScore = settings.addEditBox("Destroy stone score").type(Integer.class).def(10);
-        destroyEnemyScore = settings.addEditBox("Destroy enemy score").type(Integer.class).def(500);
+        destroyEnemyScore = settings.addEditBox("Destroy enemy score").type(Integer.class).def(250);
         loosePenalty = settings.addEditBox("Loose penalty").type(Integer.class).def(100);
     }
 

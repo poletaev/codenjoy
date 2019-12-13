@@ -53,7 +53,7 @@ public class SolverTest {
         assertA("☼   ☼" +
                 "☼ 7 ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼"
                 , Direction.STOP);
     }
@@ -61,7 +61,7 @@ public class SolverTest {
     @Test
     public void shouldRight() {
         assertA("☼   ☼" +
-                "☼☺ 7☼" +
+                "☼A 7☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
@@ -71,7 +71,7 @@ public class SolverTest {
     @Test
     public void shouldLeft() {
         assertA("☼   ☼" +
-                "☼7 ☺☼" +
+                "☼7 A☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
@@ -81,7 +81,7 @@ public class SolverTest {
     @Test
     public void shouldDown() {
         assertA("☼   ☼" +
-                "☼  ☺☼" +
+                "☼  A☼" +
                 "☼   ☼" +
                 "☼  7☼" +
                 "☼   ☼"

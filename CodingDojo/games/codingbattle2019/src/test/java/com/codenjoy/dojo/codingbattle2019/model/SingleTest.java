@@ -131,21 +131,21 @@ public class SingleTest {
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻☻☼\n");
+                "☼A☻☻☼\n");
 
         asrtFl2(
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☻☺☻☼\n");
+                "☼☻A☻☼\n");
 
         asrtFl3(
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☻☻☺☼\n");
+                "☼☻☻A☼\n");
     }
 
     // Каждый игрок может упраыляться за тик игры независимо
@@ -159,7 +159,7 @@ public class SingleTest {
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺ ☻☼\n" +
+                "☼A ☻☼\n" +
                 "☼ ☻ ☼\n");
 
         game1.getJoystick().up();
@@ -170,7 +170,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺  ☼\n" +
+                "☼A  ☼\n" +
                 "☼ ☻ ☼\n" +
                 "☼  ☻☼\n");
     }
@@ -186,7 +186,7 @@ public class SingleTest {
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n");
+                "☼A☻ ☼\n");
     }
 
     // игрок может выстрелить в другого игрока
@@ -202,7 +202,7 @@ public class SingleTest {
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n" +
+                "☼A☻ ☼\n" +
                 "☼  ☻☼\n");
 
         game1.getJoystick().up();
@@ -212,7 +212,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n" +
+                "☼A☻ ☼\n" +
                 "☼   ☼\n" +
                 "☼ ☻ ☼\n");
 
@@ -222,7 +222,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n" +
+                "☼A☻ ☼\n" +
                 "☼ * ☼\n" +
                 "☼ ☻ ☼\n");
 
@@ -230,7 +230,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺+ ☼\n" +
+                "☼A+ ☼\n" +
                 "☼   ☼\n" +
                 "☼ ☻ ☼\n");
 
@@ -247,7 +247,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺  ☼\n" +
+                "☼A  ☼\n" +
                 "☼   ☼\n" +
                 "☼☻☻ ☼\n");
     }
@@ -264,7 +264,7 @@ public class SingleTest {
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n" +
+                "☼A☻ ☼\n" +
                 "☼  ☻☼\n");
 
         game1.getJoystick().up();
@@ -274,7 +274,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n" +
+                "☼A☻ ☼\n" +
                 "☼   ☼\n" +
                 "☼ ☻ ☼\n");
 
@@ -285,7 +285,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺  ☼\n" +
+                "☼A  ☼\n" +
                 "☼ + ☼\n" +
                 "☼ ☻ ☼\n");
 
@@ -302,7 +302,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺  ☼\n" +
+                "☼A  ☼\n" +
                 "☼   ☼\n" +
                 "☼☻☻ ☼\n");
     }
@@ -320,7 +320,7 @@ public class SingleTest {
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻☻☼\n" +
+                "☼A☻☻☼\n" +
                 "☼   ☼\n");
 
         game1.getJoystick().up();
@@ -329,7 +329,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n" +
+                "☼A☻ ☼\n" +
                 "☼  ☻☼\n" +
                 "☼   ☼\n");
 
@@ -339,7 +339,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻ ☼\n" +
+                "☼A☻ ☼\n" +
                 "☼ ☻ ☼\n" +
                 "☼   ☼\n");
 
@@ -349,7 +349,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼ ☻ ☼\n" +
-                "☼☺* ☼\n" +
+                "☼A* ☼\n" +
                 "☼ ☻ ☼\n" +
                 "☼   ☼\n");
 
@@ -358,7 +358,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺+ ☼\n" +
+                "☼A+ ☼\n" +
                 "☼ ☻ ☼\n" +
                 "☼   ☼\n");
 
@@ -375,7 +375,7 @@ public class SingleTest {
 
         asrtFl1("☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺  ☼\n" +
+                "☼A  ☼\n" +
                 "☼ ☻ ☼\n" +
                 "☼☻  ☼\n");
     }
@@ -393,7 +393,7 @@ public class SingleTest {
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻☻☼\n");
+                "☼A☻☻☼\n");
     }
 
     // кол-во баллет паков 1
@@ -413,7 +413,7 @@ public class SingleTest {
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼   ☼\n" +
-                "☼☺☻☻☼\n");
+                "☼A☻☻☼\n");
 
     }
 
@@ -446,6 +446,6 @@ public class SingleTest {
                 "☼   ☼\n" +
                 "☼   ☼\n" +
                 "☼☻☻☻☼\n" +
-                "☼☺☻☻☼\n");
+                "☼A☻☻☼\n");
     }
 }

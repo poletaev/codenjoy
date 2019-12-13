@@ -55,7 +55,7 @@ public class AI2SolverTest {
         assertA("☼   ☼" +
                 "☼ 7 ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼"
                 , Direction.UP);
     }
@@ -63,7 +63,7 @@ public class AI2SolverTest {
     @Test
     public void shouldRight() {
         assertA("☼   ☼" +
-                "☼☺ 7☼" +
+                "☼A 7☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
@@ -73,7 +73,7 @@ public class AI2SolverTest {
     @Test
     public void shouldLeft() {
         assertA("☼   ☼" +
-                "☼7 ☺☼" +
+                "☼7 A☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
@@ -83,7 +83,7 @@ public class AI2SolverTest {
     @Test
     public void shouldDown() {
         assertA("☼   ☼" +
-                "☼  ☺☼" +
+                "☼  A☼" +
                 "☼   ☼" +
                 "☼  7☼" +
                 "☼   ☼"
@@ -93,21 +93,21 @@ public class AI2SolverTest {
     @Test
     public void shouldStopWhenStoneIsLeftUp() {
         assertA("☼ 0 ☼" +
-                "☼7 ☺☼" +
+                "☼7 A☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
                 , Direction.STOP);
 
         assertA("☼   ☼" +
-                "☼70☺☼" +
+                "☼70A☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
                 , Direction.LEFT);
         
         assertA("☼   ☼" +
-                "☼7☺ ☼" +
+                "☼7A ☼" +
                 "☼ 0 ☼" +
                 "☼   ☼" +
                 "☼   ☼"
@@ -117,14 +117,14 @@ public class AI2SolverTest {
     @Test
     public void shouldStopWhenStoneIsRightUp() {
         assertA("☼ 0 ☼" +
-                "☼☺ 7☼" +
+                "☼A 7☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
                 , Direction.STOP);
 
         assertA("☼   ☼" +
-                "☼☺07☼" +
+                "☼A07☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼"
@@ -137,14 +137,14 @@ public class AI2SolverTest {
         assertA("☼ 7 ☼" +
                 "☼   ☼" +
                 "☼ 0 ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼"
                 , Direction.LEFT);
 
         assertA("☼   ☼" +
                 "☼ 7 ☼" +
                 "☼   ☼" +
-                "☼☺0 ☼" +
+                "☼A0 ☼" +
                 "☼   ☼"
                 , Direction.UP);
     }
@@ -154,14 +154,14 @@ public class AI2SolverTest {
         assertA("☼ 7 ☼" +
                 "☼ 0 ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼"
                 , Direction.LEFT);
 
         assertA("☼ 7 ☼" +
                 "☼   ☼" +
                 "☼ 0 ☼" +
-                "☼☺  ☼" +
+                "☼A  ☼" +
                 "☼   ☼"
                 , Direction.UP);
     }
@@ -171,7 +171,7 @@ public class AI2SolverTest {
         assertA("☼  ♣  ☼" +
                 "☼     ☼" +
                 "☼    7☼" +
-                "☼  ☺  ☼" +
+                "☼  A  ☼" +
                 "☼     ☼" +
                 "☼     ☼" +
                 "☼     ☼"
@@ -180,7 +180,7 @@ public class AI2SolverTest {
         assertA("☼     ☼" +
                 "☼  ♣  ☼" +
                 "☼    7☼" +
-                "☼   ☺ ☼" +
+                "☼   A ☼" +
                 "☼     ☼" +
                 "☼     ☼" +
                 "☼     ☼"
@@ -189,7 +189,7 @@ public class AI2SolverTest {
         assertA("☼     ☼" +
                 "☼     ☼" +
                 "☼  ♣ 7☼" +
-                "☼    ☺☼" +
+                "☼    A☼" +
                 "☼     ☼" +
                 "☼     ☼" +
                 "☼     ☼"

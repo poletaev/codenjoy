@@ -113,7 +113,7 @@ public class CodingBattle2019Test {
         //Given
         givenFl("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -126,7 +126,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -137,7 +137,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼ 7 ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -148,7 +148,7 @@ public class CodingBattle2019Test {
 
         //then
         assertE("☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -159,7 +159,7 @@ public class CodingBattle2019Test {
 
         //then
         assertE("☼ * ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -170,7 +170,7 @@ public class CodingBattle2019Test {
 
         //then
         assertE("☼ * ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -179,7 +179,7 @@ public class CodingBattle2019Test {
 
         //then
         assertE("☼ * ☼" + //TODO не присваивается новый BulletCharger
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -191,7 +191,7 @@ public class CodingBattle2019Test {
 
         //Given
         assertE("☼   ☼" +   // todo по подстетам пуля должна быть (последняя), говорит, что нету
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -201,7 +201,7 @@ public class CodingBattle2019Test {
 
         //Given
         assertE("☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -215,13 +215,13 @@ public class CodingBattle2019Test {
         //Given
         givenFl("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
     }
@@ -232,7 +232,7 @@ public class CodingBattle2019Test {
         //given
         givenFl("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
         //when
@@ -242,7 +242,7 @@ public class CodingBattle2019Test {
 
         //then
         assertE("☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -253,7 +253,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼   ☼" +
-                "☼  ☺☼" +
+                "☼  A☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -265,7 +265,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼  ☺☼" +
+                "☼  A☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -276,7 +276,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
         //When
@@ -285,7 +285,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼   ☼" +
-                "☼  ☺☼" +
+                "☼  A☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -296,7 +296,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
         //When
@@ -305,7 +305,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼   ☼" +
-                "☼☺  ☼" +
+                "☼A  ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -316,7 +316,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
     }
@@ -327,7 +327,7 @@ public class CodingBattle2019Test {
         //Given
         givenFl("☼   ☼" +
                 "☼   ☼" +
-                "☼☺  ☼" +
+                "☼A  ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -340,7 +340,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼ 0 ☼" +
                 "☼   ☼" +
-                "☼☺  ☼" +
+                "☼A  ☼" +
                 "☼   ☼" +
                 "☼   ☼");
         //When
@@ -352,7 +352,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼  0☼" +
                 "☼   ☼" +
-                "☼☺  ☼" +
+                "☼A  ☼" +
                 "☼ 0 ☼" +
                 "☼   ☼");
     }
@@ -364,7 +364,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
 
         //When
         diceNew(0);
@@ -377,7 +377,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
         //When
         game.tick();
 
@@ -386,7 +386,7 @@ public class CodingBattle2019Test {
                 "☼0  ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
     }
 
     @Test
@@ -396,7 +396,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
 
         //When
         diceNew(1); // камень в первой колонке, мины нет, камень во второй колонке
@@ -413,7 +413,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼ 0 ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
     }
 
     @Test
@@ -422,7 +422,7 @@ public class CodingBattle2019Test {
         givenFl("☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         //When
@@ -436,7 +436,7 @@ public class CodingBattle2019Test {
         assertE("☼   ☼" +
                 "☼ * ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
     }
 
@@ -445,7 +445,7 @@ public class CodingBattle2019Test {
         //Given
         givenFl("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -459,7 +459,7 @@ public class CodingBattle2019Test {
         //Then
         assertE("☼   ☼" +
                 "☼ * ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -469,7 +469,7 @@ public class CodingBattle2019Test {
            //Then
         assertE("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
     }
@@ -481,7 +481,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
         //When
         diceNew(1);
         hero.recharge();
@@ -495,7 +495,7 @@ public class CodingBattle2019Test {
                 "☼ * ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
 
         //When
         game.tick();
@@ -505,7 +505,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
 
     }
 
@@ -515,7 +515,7 @@ public class CodingBattle2019Test {
         givenFl("☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         //When
@@ -528,7 +528,7 @@ public class CodingBattle2019Test {
         assertE("☼   ☼" +
                 "☼   ☼" +
                 "☼ * ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         //When
@@ -538,7 +538,7 @@ public class CodingBattle2019Test {
         assertE("☼   ☼" +
                 "☼ * ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         //When
@@ -548,7 +548,7 @@ public class CodingBattle2019Test {
         assertE("☼ x ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         //When
@@ -558,7 +558,7 @@ public class CodingBattle2019Test {
         assertE("☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
     }
@@ -569,7 +569,7 @@ public class CodingBattle2019Test {
         //given
         givenFl("☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
 
@@ -583,7 +583,7 @@ public class CodingBattle2019Test {
         //then
         assertE("☼ ♣ ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼");
     }
@@ -595,7 +595,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼  ☺☼");
+                "☼  A☼");
 
         //when
         diceNew(-1, 0);
@@ -608,7 +608,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼  ☺☼");
+                "☼  A☼");
 
         //when
         diceNew(-1, 2);
@@ -621,7 +621,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼♣  ☼" +
-                "☼  ☺☼");
+                "☼  A☼");
     }
 
     @Test
@@ -630,7 +630,7 @@ public class CodingBattle2019Test {
         givenFl("☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         //when
@@ -644,7 +644,7 @@ public class CodingBattle2019Test {
         assertE("☼   ☼" +
                 "☼0 ♣☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
     }
 
@@ -655,7 +655,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼☺  ☼");
+                "☼A  ☼");
 
         //When
         diceNew(-1, 2);
@@ -668,7 +668,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼☺  ☼");
+                "☼A  ☼");
 
         //When
         game.tick();
@@ -681,7 +681,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼☺ ♣☼");
+                "☼A ♣☼");
 
         //When
         game.tick();
@@ -691,7 +691,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼☺  ☼");
+                "☼A  ☼");
     }
 
     @Test
@@ -702,7 +702,7 @@ public class CodingBattle2019Test {
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
 
 
         diceNew(-1, 1);
@@ -717,7 +717,7 @@ public class CodingBattle2019Test {
                 "☼ * ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
 
         game.tick();
 
@@ -725,7 +725,7 @@ public class CodingBattle2019Test {
                 "☼xxx☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼");
+                "☼ A ☼");
     }
 
     @Test
@@ -735,7 +735,7 @@ public class CodingBattle2019Test {
         givenFl("☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
 
@@ -749,7 +749,7 @@ public class CodingBattle2019Test {
         assertE("☼   ☼" +
                 "☼ * ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         game.tick();
@@ -757,7 +757,7 @@ public class CodingBattle2019Test {
         assertE("☼xxx☼" +
                 "☼xxx☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
 
         game.tick();
@@ -765,7 +765,7 @@ public class CodingBattle2019Test {
         assertE("☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼");
     }
 
@@ -774,7 +774,7 @@ public class CodingBattle2019Test {
         // given
         givenFl("☼    ☼" +
                 "☼    ☼" +
-                "☼ ☺  ☼" +
+                "☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼");
@@ -787,7 +787,7 @@ public class CodingBattle2019Test {
         // then
         assertE("☼ 0 ♣☼" +
                 "☼    ☼" +
-                "☼ ☺  ☼" +
+                "☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼");
@@ -801,7 +801,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼");
+                "☼  A ☼");
 
         diceNew(0, 2);
         hero.recharge();
@@ -817,7 +817,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼  * ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼");
+                "☼  A ☼");
 
         game.tick();
 
@@ -827,7 +827,7 @@ public class CodingBattle2019Test {
                 "☼0xxx☼" +
                 "☼ xxx☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼");
+                "☼  A ☼");
 
     }
 
@@ -838,7 +838,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         diceNew(0, 2);
@@ -852,7 +852,7 @@ public class CodingBattle2019Test {
                 "☼0 ♣ ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         game.tick();
@@ -884,7 +884,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         diceNew(0, 2);
@@ -898,7 +898,7 @@ public class CodingBattle2019Test {
                 "☼0 ♣ ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         game.tick();
@@ -929,7 +929,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼0   ☼");
     }
 
@@ -940,7 +940,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         diceNew(0, 3);
@@ -955,7 +955,7 @@ public class CodingBattle2019Test {
                 "☼0  ♣☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         game.tick();
@@ -985,7 +985,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼0   ☼");
     }
 
@@ -996,7 +996,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         diceNew(2);
@@ -1010,7 +1010,7 @@ public class CodingBattle2019Test {
                 "☼  0 ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         game.tick();
@@ -1021,7 +1021,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼  0 ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         game.tick();
@@ -1042,7 +1042,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
         diceNew(-1, -1, 1, 1);
@@ -1054,7 +1054,7 @@ public class CodingBattle2019Test {
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
-                "☼  ☺ ☼" +
+                "☼  A ☼" +
                 "☼    ☼");
 
     }
@@ -1064,7 +1064,7 @@ public class CodingBattle2019Test {
         // given
         givenFl("☼    ☼" +
                 "☼    ☼" +
-                "☼ ☺  ☼" +
+                "☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼");
@@ -1078,7 +1078,7 @@ public class CodingBattle2019Test {
         // then
         assertE("☼ 7  ☼" +
                 "☼    ☼" +
-                "☼ ☺  ☼" +
+                "☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼");
@@ -1087,7 +1087,7 @@ public class CodingBattle2019Test {
         game.tick();
 
         assertE("☼ 7  ☼" +
-                "☼ ☺  ☼" +
+                "☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
@@ -1096,7 +1096,7 @@ public class CodingBattle2019Test {
         hero.up();
         game.tick();
 
-        assertE("☼ ☺  ☼" +
+        assertE("☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
@@ -1108,7 +1108,7 @@ public class CodingBattle2019Test {
     public void shouldNewBulletPackAfterHeroGetOldBulletPack() {
         // given
         givenFl("☼    ☼" +
-                "☼ ☺  ☼" +
+                "☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
@@ -1119,7 +1119,7 @@ public class CodingBattle2019Test {
 
         // then
         assertE("☼7   ☼" +
-                "☼ ☺  ☼" +
+                "☼ A  ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
@@ -1130,7 +1130,7 @@ public class CodingBattle2019Test {
 
         // then
         assertE("☼7   ☼" +
-                "☼☺   ☼" +
+                "☼A   ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
                 "☼    ☼" +
@@ -1142,7 +1142,7 @@ public class CodingBattle2019Test {
         game.tick();
 
         // then
-        assertE("☼☺   ☼" +
+        assertE("☼A   ☼" +
                 "☼   7☼" +
                 "☼    ☼" +
                 "☼    ☼" +
@@ -1154,7 +1154,7 @@ public class CodingBattle2019Test {
     public void shouldHeroShootAfterRecharge() {
         //Given
         givenFl("☼   ☼" +
-                "☼ ☺ ☼" +
+                "☼ A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -1165,7 +1165,7 @@ public class CodingBattle2019Test {
 
         //Given
         assertE("☼   ☼" +
-                "☼7☺ ☼" +
+                "☼7A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -1176,7 +1176,7 @@ public class CodingBattle2019Test {
 
         //Given
         assertE("☼   ☼" +
-                "☼7☺ ☼" +
+                "☼7A ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -1186,7 +1186,7 @@ public class CodingBattle2019Test {
 
         //Given
         assertE("☼   ☼" +
-                "☼☺  ☼" +
+                "☼A  ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");
@@ -1197,7 +1197,7 @@ public class CodingBattle2019Test {
 
         //Then
         assertE("☼*  ☼" +
-                "☼☺  ☼" +
+                "☼A  ☼" +
                 "☼   ☼" +
                 "☼   ☼" +
                 "☼   ☼");

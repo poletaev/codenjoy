@@ -23,11 +23,13 @@ package com.codenjoy.dojo.codingbattle2019.client.ai;
  */
 
 import com.codenjoy.dojo.client.Solver;
+import com.codenjoy.dojo.client.WebSocketRunner;
+import com.codenjoy.dojo.codingbattle2019.client.Board;
+import com.codenjoy.dojo.codingbattle2019.model.Elements;
 import com.codenjoy.dojo.services.Dice;
 import com.codenjoy.dojo.services.Direction;
 import com.codenjoy.dojo.services.Point;
-import com.codenjoy.dojo.codingbattle2019.client.Board;
-import com.codenjoy.dojo.codingbattle2019.model.Elements;
+import com.codenjoy.dojo.services.RandomDice;
 
 import java.util.List;
 
@@ -48,7 +50,7 @@ public class AI3Solver implements Solver<Board> {
     public String get(final Board board) {
         this.board = board;
         if (board.isGameOver())
-            return "";
+            return Direction.STOP.toString();
         Direction result = Direction.STOP;
         result = findDirection(board);
         if (result != null) {
@@ -270,6 +272,7 @@ public class AI3Solver implements Solver<Board> {
         }
         return bestDirection;
     }
+
     private Direction findBestDirectionNearStone(Board board, Point me, Direction givenDirection) {
         Direction bestDirection = givenDirection;
 
@@ -289,5 +292,14 @@ public class AI3Solver implements Solver<Board> {
             return Direction.LEFT;
         }
         return bestDirection;
+    }
+
+    public static void main(String[] args) {
+        WebSocketRunner.runClient(
+                // paste here board page url from browser after registration
+                //"http://codenjoy.com:80/codenjoy-contest/board/player/3edq63tw0bq4w4iem7nb?code=1234567890123456789",
+                "http://127.0.0.1:8080/codenjoy-contest/board/player/demo1@codenjoy.com?code=103734703798248113",
+                new AI3Solver(new RandomDice()),
+                new Board());
     }
 }
