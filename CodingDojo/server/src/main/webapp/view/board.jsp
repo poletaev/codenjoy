@@ -41,9 +41,6 @@
     <div id="settings" page="board" contextPath="${ctx}" gameName="${gameName}" playerName="${playerName}" readableName="${readableName}" code="${code}" allPlayersScreen="${allPlayersScreen}"></div>
 
     <div id="board_page">
-        <div id="donate" style="display:none;">
-            <input type="button" id="want-donate" value="Помочь проекту..."/>
-        </div>
         <%@include file="canvases.jsp"%>
         <%@include file="leaderstable.jsp"%>
         <%@include file="advertisement.jsp"%>
