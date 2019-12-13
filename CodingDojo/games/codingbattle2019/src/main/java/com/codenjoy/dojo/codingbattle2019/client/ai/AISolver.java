@@ -27,11 +27,16 @@ import com.codenjoy.dojo.services.Dice;
 import com.codenjoy.dojo.services.Direction;
 import com.codenjoy.dojo.codingbattle2019.client.Board;
 
+import java.util.logging.Logger;
+
 public class AISolver implements Solver<Board> {
+
+    Logger log = Logger.getLogger(AISolver.class.getName());
 
     private int delay = 0;
     private boolean vpravo = true;
     private Dice dice;
+    private final int MIN_DIST = 2;
 
     public AISolver(Dice dice) {
         this.dice = dice;
@@ -40,21 +45,33 @@ public class AISolver implements Solver<Board> {
     @Override
     public String get(final Board board) {
         String result = "";
-        int x = board.getMe().getX();
+        final int x = board.getMe().getX();
+        final int y = board.getMe().getY();
 
-        if (vpravo && (x < board.size() - 5)||(x < 5)){
-            result = Direction.RIGHT.toString();
+        if (vpravo && (x < board.size() - MIN_DIST)||(x < MIN_DIST)){
+            if (y < (board.size() - MIN_DIST) || (y < MIN_DIST))
+                result = Direction.DOWN_RIGHT.toString();
+            else
+                result = Direction.UP_RIGHT.toString();
             vpravo = true;
         } else {
             vpravo = false;
-            result = Direction.LEFT.toString();
+            if (y < (board.size() - MIN_DIST) || (y < MIN_DIST))
+                result = Direction.DOWN_LEFT.toString();
+            else
+                result = Direction.UP_LEFT.toString();
         }
 
         delay++;
         if (delay >= 3){
-            result += Direction.UP.ACT.toString();
+            result += ",";
+            result += Direction.ACT.toString();
             delay = 0;
         }
+
+        log.info("action: " + result +
+                " my position: (" + x + "," + y + ")" +
+                " board size: " + board.size());
 
         return result;
     }
