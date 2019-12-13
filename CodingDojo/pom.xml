@@ -6,14 +6,10 @@
 
     <groupId>com.codenjoy</groupId>
     <artifactId>codenjoy-parent</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <packaging>pom</packaging>
 
     <distributionManagement>
-        <repository>
-            <id>codenjoy-releases</id>
-            <url>https://github.com/codenjoyme/codenjoy-repo/raw/master/releases</url>
-        </repository>
         <snapshotRepository>
             <id>codenjoy-snapshots</id>
             <url>https://github.com/codenjoyme/codenjoy-repo/raw/master/snapshots</url>

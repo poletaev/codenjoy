@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.codenjoy</groupId>
         <artifactId>games</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
     </parent>
 
     <artifactId>codingbattle2019-engine</artifactId>
@@ -15,13 +15,6 @@
     <properties>
         <module.name>codingbattle2019</module.name>
     </properties>
-
-    <repositories>
-        <repository>
-            <id>codenjoy-releases</id>
-            <url>https://github.com/codenjoyme/codenjoy-repo/raw/master/snapshots</url>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>
