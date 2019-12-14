@@ -417,6 +417,52 @@ public class CodingBattle2019Test {
     }
 
     @Test
+    public void testFireUp() {
+        //Given
+        givenFl("☼   ☼" +
+                "☼   ☼" +
+                "☼A  ☼" +
+                "☼   ☼" +
+                "☼   ☼");
+
+        //When
+        diceNew();
+        hero.right();
+        game.tick();
+        //Then
+        assertE("☼   ☼" +
+                "☼   ☼" +
+                "☼ > ☼" +
+                "☼   ☼" +
+                "☼   ☼");
+
+
+        hero.recharge();
+        hero.act();
+        game.tick();
+
+
+        //Then
+        assertE("☼   ☼" +
+                "☼ *  ☼" +
+                "☼ > ☼" +
+                "☼   ☼" +
+                "☼   ☼");
+
+        game.tick();
+        game.tick();
+
+        //Then
+        assertE("☼   ☼" +
+                "☼   ☼" +
+                "☼ > ☼" +
+                "☼   ☼" +
+                "☼   ☼");
+
+    }
+
+
+    @Test
     public void shouldHeroShoot() {
         //Given
         givenFl("☼   ☼" +
