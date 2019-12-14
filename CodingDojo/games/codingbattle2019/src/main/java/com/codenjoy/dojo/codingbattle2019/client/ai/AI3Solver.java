@@ -298,7 +298,7 @@ public class AI3Solver implements Solver<Board> {
         WebSocketRunner.runClient(
                 // paste here board page url from browser after registration
                 //"http://codenjoy.com:80/codenjoy-contest/board/player/3edq63tw0bq4w4iem7nb?code=1234567890123456789",
-                "http://192.168.1.150:8080/codenjoy-contest/board/player/demo1@codenjoy.com?code=103734703798248113",
+                "http://192.168.1.150:8080/codenjoy-contest/board/player/demo01@codenjoy.com?code=3882552591105911255",
                 new AI3Solver(new RandomDice()),
                 new Board());
     }
